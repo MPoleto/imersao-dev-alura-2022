@@ -1,4 +1,6 @@
-# Portifólio 
+# Portifólio
+
+Repositório dos projetos realizados durante a Imersão_dev Alura
 
 ## 🤿 Imersão_dev Alura
 
