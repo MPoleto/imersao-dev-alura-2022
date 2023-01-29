@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Josefin+Sans&display=swap');
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: rgb(111, 187, 211);
+  background-image: url('./img/background-gris.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 600px;
+  margin: 4rem auto 2rem;
+  padding: 1.5rem 2rem;
+  color: #111;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px #0e1d2f;
+  background-color: rgba(211, 211, 244, 0.7);  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.perfil{
+  display: flex;
+}
+
+.perfil-foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo {
+  margin-left: 16px;
+  font-family: 'Cinzel', serif;
+}
+
+.titulo h1 {
+  margin: 0.5rem 0;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.titulo h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.contatos {
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.contato-icone {
+  width: 25px;
+  margin-right: 1.2rem;
+  cursor: pointer;
+}
+
+.contato-icone:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+.tema button {
+  align-self: flex-end;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: rgba(211, 211, 244, 0.5);
+  border-radius: 100px;
+  border: none;
+  box-shadow: 1px 1px 3px #0e1d2f;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.tema button:hover {
+  font-weight: bold;
+  background-color: rgba(211, 211, 244, 0.99);
+  box-shadow: 2px 2px 4px #0e1d2f;
+}
+
+.tema button:active {
+  box-shadow: 1px 1px 2px #0e1d2f;
+}
+
+.projetos {
+  margin-top: 2rem;
+  padding: 1rem 2rem 0;
+  border-top: 2px solid #111;
+}
+
+.projetos-titulo {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  font-family: 'Cinzel', serif;
+}
+
+.projetos-item {
+  padding-left: 15px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+dd {
+  padding-left: 0px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.projetos-item a:hover, dd a:hover {
+  text-decoration-line: underline;
+}
+
+.projetos-item a:active, dd a:active {
+  text-decoration-line: none;
+  opacity: 0.7;
+}
+
+/* Dark Mode */
+
+.dark {
+  background-color: rgb(18, 10, 43);
+  background-image: url('./img/background-dark-gris.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+
+.dark .container {
+  color: #f6f6f6;
+  background-color: rgba(11, 40, 60, 0.7);
+  box-shadow: 6px 6px 6px rgba(11, 190, 210, 0.25);
+}
+
+.dark .perfil-foto {
+  box-shadow: 0px 4px 4px rgba(11, 190, 210, 0.5);
+}
+
+.dark .tema button {
+  background-color: rgba(11, 40, 60, 0.5);
+  color: #f6f6f6;
+  border: none;
+  box-shadow: 1px 1px 4px rgba(11, 190, 210, 0.5);
+}
+
+.dark .tema button:hover {
+  background-color: rgba(11, 40, 60, 0.99);
+  box-shadow: 2px 2px 5px rgba(11, 190, 210, 0.5);
+}
+
+.dark .tema button:active {
+  box-shadow: 1px 1px 2px rgba(11, 190, 210, 0.5);
+}
+
+.dark .projetos {
+  border-top: 2px solid #f6f6f6;
+}
+
+.dark a {
+  color: #f6f6f6;
+}
+
+.dark .contato-icone {
+  filter: invert(90%);
+}

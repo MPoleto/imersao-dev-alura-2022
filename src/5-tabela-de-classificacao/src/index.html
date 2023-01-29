@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tabela de classificação</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <h1>Tabela de classificação</h1>
+  <div class="trace"></div>
+  <div id="wrapper-input">
+    <div id="score">
+      <input type="number" id="max-point" min="1" placeholder="Pontos para vencer (opcional)" title="Opcional: Add quantidade de pontos que precisa para vencer" />
+      <button type="submit" id="score-to-win">Add</button>
+    </div>
+    <div id="wrapper-player">
+      <div class="dropdown">
+        <button class="dropbtn">Escolha seu Avatar</button>
+        <div class="dropdown-content">
+          <input type="radio" id="dog" name="avatar" checked>
+          <label for="dog"><img src="./assets/img/dog-icon.png" alt="dog" /></label>
+          <input type="radio" id="rat" name="avatar">
+          <label for="rat"><img src="./assets/img/rat-icon.png" alt="rat" /></label>
+          <input type="radio" id="fairy" name="avatar">
+          <label for="fairy"><img src="./assets/img/fairy-icon.png" alt="fairy" /></label>
+          <input type="radio" id="little-monster" name="avatar">
+          <label for="little-monster"><img src="./assets/img/monster-icon.png" alt="little-monster" /></label>
+          <input type="radio" id="bear" name="avatar">
+          <label for="bear"><img src="./assets/img/bear-icon.png" alt="bear" /></label>
+          <input type="radio" id="lhama" name="avatar">
+          <label for="lhama"><img src="./assets/img/lhama-icon.png" alt="lhama" /></label>
+          <input type="radio" id="unicorn" name="avatar">
+          <label for="unicorn"><img src="./assets/img/unicorn-icon.png" alt="unicorn" /></label>
+          <input type="radio" id="pirate" name="avatar">
+          <label for="pirate"><img src="./assets/img/pirate-icon.png" alt="pirate" /></label>
+          <input type="radio" id="alien" name="avatar">
+          <label for="alien"><img src="./assets/img/alien-icon.png" alt="alien" /></label>
+          <input type="radio" id="robot" name="avatar">
+          <label for="robot"><img src="./assets/img/robot-icon.png" alt="robot" /></label>
+        </div>
+      </div>
+      <input type="text" id="player" placeholder="Nome do jogador" required />
+      <button type="submit" id="show-player">Adicionar</button>
+    </div>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Vitórias</th>
+        <th>Derrotas</th>
+        <th>Bônus</th>
+        <th>Pontos</th>
+        <th colspan="3">Ações</th>
+      </tr>
+    </thead>
+    <tbody id="players-table">
+    </tbody>
+  </table>
+  <button type="reset" id="reset-points">Zerar Pontos</button>
+  <button type="reset" id="clear-table">Limpar Tabela</button><br>
+  <a href="https://www.flaticon.com/stickers-pack/fairytale-characters" title="stickers">Stickers created by Lesen Fox - Flaticon</a>
+
+  <script src="./assets/script.js"></script>
+</body>
+</html>

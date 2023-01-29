@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de média</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="container">
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="Logo da Imersão Dev Alura">
+      <h1 class="page-title">Calculadora de média</h1>
+      <p class="page-subtitle">
+      Descubra qual a sua nota média em todas as disciplinas!</p>
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+    <div class="wrapper">
+      <form id="form">
+        <div id="school-wrapper">
+          <label for="school">Qual é a média da sua escola?</label>
+          <input type="number" id="school" min="1" max="10" required>
+        </div>
+        <div id="gradesOne-wrapper">
+          <label for="gradesOne">Nota 1º bimestre:</label>
+          <input type="number" id="gradesOne" step="0.01" min="0.0" max="10.0" required>
+        </div>
+        <div id="gradesTwo-wrapper">
+          <label for="gradesTwo">Nota 2º bimestre:</label>
+          <input type="number" id="gradesTwo" step="0.01" min="0.0" max="10.0" required>
+        </div>
+        <div id="gradesThree-wrapper">
+          <label for="gradesThree">Nota 3º bimestre:</label>
+          <input type="number" id="gradesThree" step="0.01" min="0.0" max="10.0" required>
+        </div>
+        <div id="gradesFour-wrapper">
+          <label for="gradesFour">Nota 4º bimestre:</label>
+          <input type="number" id="gradesFour" step="0.01" min="0.0" max="10.0" required>
+        </div>
+        <button id="submit" type="submit">Clique aqui!</button>
+      </form>
+      <h2 id="final-grades"></h2>
+      <p id="approval"></p>
+      <button id="reset" type="reset">Reset</button>
+    </div>
+    <img src="./assets/background-prova.png" alt="imagem ilustrativa de uma prova. Imagem: Flaticon.com" class="background">
+  <script  src="./assets/script.js"></script>
+
+</body>
+</html>

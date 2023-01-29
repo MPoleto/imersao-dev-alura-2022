@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+body {
+  font-family: 'Cutive Mono', monospace;
+  min-height: 400px;
+  background-image: url('./background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #000;
+}
+
+.container {
+  display: grid;
+  height: 96vh;
+  grid-template-columns: 35vw 30vw 35vw;
+  grid-template-rows: 11vh 74vh 11vh;
+  row-gap: 1vh;
+  align-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  margin: 0 12vw 0 0;
+  padding: 0;
+  align-self: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  border-radius: 1%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+li a {
+  color: #000;
+  font-size: 1.2vw;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  padding: 1.3vw;
+  margin: 0.7vw 0;
+}
+
+li > a:hover {
+  text-decoration: underline solid #000 1px;
+  background-color: rgba(85,107,47, 0.8);
+  border-left: 0.5vw double #000;
+  font-weight: bold;
+}
+
+li > a:active {
+  background-color: rgba(85,107,47, 0.4);
+  text-decoration: none;
+  border-left: 4px solid #000; 
+}
+
+article {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  align-self: center;
+  text-align: center;
+  margin: 0;
+  padding: 1vw 0.4vw;
+  border-radius: 1%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.page-title {
+  margin: 0;
+  padding: 10px;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 2.5vw;
+  font-weight: bolder;
+  color: rgb(33, 42, 18);
+}
+
+.page-subtitle {
+  margin: 0;
+  padding: 0.9vw;
+  font-size: 1.6vw;
+}
+
+input[type="radio"] {
+  accent-color: darkolivegreen;
+}
+
+input[type="number"] {
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 1.2vw;
+  width: 11vw;
+  margin: 1vw;
+  padding: 0.25vw 0.8vw;
+  border-radius: 1vw;
+  border: 2px solid rgba(85,107,47, 0.3);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none; 
+}
+
+input[type="number"]:focus {
+  border: 2px solid rgba(85,107,47, 0.8);
+}
+
+button {
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 1vw;
+  font-weight: bold;
+  letter-spacing: 0.1vw;
+  margin: 1vw;
+  padding: 0.4vw 0.8vw;
+  border-radius: 1vw;
+  background-color: rgba(85,107,47, 0.8);
+}
+
+button:hover {background-color: rgb(85,107,47);}
+
+button:active {background-color: rgb(33, 42, 18);}
+
+h3 {
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 1.4vw;
+  letter-spacing: 0.1vw;
+}
+
+.alura-link {
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  margin: 0px auto;
+  padding: 0;
+  align-self: center;
+}
+
+.alura-logo {
+  width: 60px;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background-color: #fff;
+  margin: 0px auto;
+}
+
+.page-logo {
+  display: block;
+  margin: auto;
+  width: 150px;
+  filter: hue-rotate(240deg) invert(100%) brightness(130%);
+}
+
+/* CONVERSOR DE MOEDAS */
+
+#money-input {
+  text-align: left;
+  padding: 0;
+  margin: 1vw 3vw 1vw 6vw;
+  font-size: 1.4vw;
+}
+
+#money-input > input {
+  margin-bottom: 1.5vw;
+}
+
+#real-yen,
+#yen-real {
+  margin-left: 2.1vw;
+}
+
+/* CONVERSOR ANO-LUZ */
+
+#light-years { display: none; }
+
+#input-distance {
+  padding: 0;
+  margin: 1.5vw auto;
+  font-size: 1.4vw;
+}
+
+#km-lightyear {
+  margin-bottom: 2vw;
+}
+
+/* CONVERSOR DE TEMPERATURA */
+
+#temperature {display: none;}
+
+select {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 1.4vw;
+  width: 13vw;
+  margin: 1vw;
+  padding: 0.3vw 0.8vw;
+  border-radius: 1vw;
+  border: 2px solid rgba(85,107,47, 0.3);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+select:focus {
+  border: 2px solid rgba(85,107,47, 0.8);
+}
+
+form > label {
+  padding: 0;
+  margin: 1.5vw auto;
+  font-size: 1.4vw;
+}
+
+#input-temperature {
+  margin-left: 1.8vw;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Conversor de moedas</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<main class="container">
+    <nav>
+      <ul>
+        <li><a href="#money" id="money-link">Conversor de moedas</a></li>
+        <li><a href="#light-years" id="distance-link">Conversor de anos-luz</a></li>
+        <li><a href="#temperature" id="temperature-link">Conversor de temperatura</a></li>
+      </ul>
+    </nav>
+    <article id="money">
+      <h1 class="page-title">Conversor de moedas</h1>
+      <h2 class="page-subtitle">Selecione a conversão que você deseja fazer:</h2>
+      <section id="money-input">
+        <label for="dollar-real">Dólar para Real</label>
+        <input type="radio" id="dollar-real" name="conversion" value="dollar-real" checked /><br>
+        <label for="real-dollar">Real para Dólar</label>
+        <input type="radio" id="real-dollar" name="conversion" value="real-dollar" /><br>
+        <label for="real-yen">Real para Yen</label>
+        <input type="radio" id="real-yen" name="conversion" value="real-yen" /><br>
+        <label for="yen-real">Yen para Real</label>
+        <input type="radio" id="yen-real" name="conversion" value="yen-real" />
+      </section>
+      <input type="number" id="input-value" step="0.01" placeholder="Add o valor" required />
+      <button type="submit" onclick="Convert()">Converter</button>
+      <h3 id="converted-value"></h3>
+    </article>
+    <article id="light-years">
+      <h1 class="page-title">Conversor de Anos-luz</h1>
+      <h2 class="page-subtitle">Selecione a conversão que você deseja fazer:</h2>
+      <section id="input-distance">
+        <label for="km-lightyear">Km para Ano-luz</label>
+        <input type="radio" id="km-lightyear" name="distance" value="km-lightyear" checked /><br>
+        <label for="lightyear-km">Ano-luz para km</label>
+        <input type="radio" id="lightyear-km" name="distance" value="lightyear-km" /><br>
+      </section>
+      <input type="number" id="input-value-distance" placeholder="Add o valor" step="0.01" required />
+      <button type="submit" onclick="convertDistance()">Converter</button>
+      <h3 id="converted-distance"></h3>
+    </article>
+    <article id="temperature">
+      <h1 class="page-title">Conversor de temperaturas</h1>
+      <h2 class="page-subtitle">Selecione a conversão que você deseja fazer:</h2>
+      <form id="input-temperature">
+        <label for="convert-from">De:</label>
+        <select id="convert-from">
+          <option value="Celsius">Celsius</option>
+          <option value="Fahrenheit">Fahrenheit</option>
+          <option value="Kelvin">Kelvin</option>
+        </select>
+      </form>
+      <form id="output-temperature">
+        <label for="converted-to">Para:</label>
+        <select id="converted-to">
+          <option value="Celsius">Celsius</option>
+          <option value="Fahrenheit">Fahrenheit</option>
+          <option value="Kelvin">Kelvin</option>
+        </select>
+      </form>
+      <input type="number" id="input-value-temperature" step="0.01" placeholder="Add o valor" required />
+      <button type="submit" id="convert-temperature">Converter</button>
+      <h3 id="converted-temperature"></h3>
+    </article>
+    <a href="https://alura.com.br/" target="_blank" class="alura-link">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="link para o site da Alura" class="alura-logo">
+  </main>
+  <footer>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="logo da imersão dev">
+  </footer>
+  <script  src="./assets/script.js"></script>
+</body>
+</html>

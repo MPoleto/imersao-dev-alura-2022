@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 600px;
+  font-family: 'Teko', sans-serif;
+  color: #111;
+  background: rgb(255,254,233);
+  background: radial-gradient(circle, rgb(255,254,233) 6%, rgb(255,254,230) 57%, rgb(255,253,218) 86%, rgb(255,251,200) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  padding: 0 0.6rem;
+  text-transform: uppercase;
+}
+
+.logo {
+  position: absolute;
+  left: 0.6rem;
+  top: 0.6rem;
+  width: 7.2rem;
+  background-color: #222;
+}
+
+.titulo {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  font-size: 3.5rem;
+  font-family: 'Gochi Hand', cursive;
+  letter-spacing: 0.07rem;
+  text-shadow: 0px 0px 1px #ff2, -2px 2px 0px #111;
+}
+
+.subtitulo {
+  margin: 0;
+  font-size: 1.6rem;
+  text-align: right;
+  color: #d11;
+}
+
+.wrapper {
+  width: 75%;
+  padding: 0;
+  margin: 2.5rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Carta */
+
+#carta-jogador, #carta-maquina {
+  width: 22.5rem;
+  height: 31.25rem;
+  margin: 0 auto;
+  overflow: auto;
+  position: relative;
+  color: #f2f2f2;
+}
+
+.carta-imagem {
+  position: absolute;
+  top: 11.6%;
+  left: 8%;
+  width: 19rem;
+  height: 13.75rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.carta-moldura {
+  filter: grayscale(1) contrast(140%);
+}
+
+.carta-nome {
+  position: absolute;
+  top: 0.75rem;
+  left: 2.5rem;
+  color: #111;
+  z-index: 2;
+}
+
+h4 {
+  position: absolute;
+  top: 17.82rem;
+  left: 2.5rem;
+  margin: 0;
+  font-size: 0.93rem;
+  letter-spacing: 0.5px;
+}
+
+.carta-status {
+  position: absolute;
+  top: 20rem;
+  left: 0rem;
+  height: 8.44rem;
+  display: flex;
+  justify-content: center;
+  align-items: space-evenly;
+  flex-wrap: wrap;
+  text-align:left;
+  z-index: 2;
+}
+
+.carta-status label {
+  margin: 0;
+  padding: 0;
+  flex-basis: 8.125rem;
+  font-size: 1.07rem;
+  letter-spacing: 0.5px;
+}
+
+.carta-status input {
+  margin: 0;
+  margin-right: 0.19rem;
+  accent-color: #ff2;
+}
+
+.carta-status label span {
+  padding-left: 0.38rem;
+  font-size: 1.25rem;
+  color: #ff2;
+}
+
+/* Botões e textos */
+
+#section-btn {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+p.resultado {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+p.resultado-final {
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding: 1rem;
+  color: rgb(255,251,200);
+  letter-spacing: 0.07rem;
+  font-family: 'Gochi Hand', cursive;
+  text-shadow: -1px 0px #111, 0px 1px #111, 1px 0px #111, 0px -1px #111, 0px 0px 2px #111, 0px 0px 10px #111;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  margin: 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: 'Gochi Hand', cursive;
+  color: rgb(255,251,200);
+  background-color: #111;
+  border-radius: 5px;
+  border: 1px solid rgb(255,251,200);
+  box-shadow: 1px 0 #111, -1px 3px #111, -3px 1px #111, 0 -1px #111;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+button[disabled] {
+  color: #ccc;
+  border: 1px solid #ccc;
+  opacity: 0.6;
+  cursor: initial;
+}
+
+#btnReset {
+  position: absolute;
+  top: 2.5rem;
+  left: 0.6rem;
+  margin: 0;
+  transition: 0.5s;
+}
+
+button:hover:not(button[disabled]) {
+  color: #ccc;
+  border: 1px solid #ccc;
+}
+
+button:active:not(button[disabled]) {
+  color: #ff2;
+  border: 1px solid #ff2;
+  box-shadow: 1px 0 #111, 0 2px #111, -2px 1px #111, 0 -1px #111;
+}

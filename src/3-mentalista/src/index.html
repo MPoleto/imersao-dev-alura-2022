@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Mentalista</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h1 class="page-title">Mentalista</h1>
+      <p class="page-subtitle">Escolha um número entre de 0 a 10.</p>
+      <p class="page-subtitle">Você tem 3 chances para acertar!</p>
+    </div>
+    <div>
+      <h2>Qual é o número?</h2>
+      <div id="form">
+        <div>
+      <input type="number" id="value" min=0 max=10 required/><br>
+        </div>
+        <div>
+      <button type="submit" id="submit" onclick="guess()">Chutar</button><br>
+      <button type="reset" id="reset">Reset</button>
+          </div>
+        </div>
+      <p class="result" id="result"></p>
+    </div>
+  </div>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo" alt="Logo da imersão dev"><br>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="Link para site da alura" class="alura-logo">
+  </a>
+  <script  src="./assets/script.js"></script>
+</body>
+</html>
