@@ -2,6 +2,12 @@
 
 Repositório dos projetos realizados durante a Imersão_dev Alura
 
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **Imersão_dev 5 Alura**
+| :label: Tecnologias | html, css e javascript
+| :rocket: URL         | https://mpoleto.github.io/imersao-dev-alura-2022/
+
 ## 🤿 Imersão_dev Alura
 
 Em setembro de 2022 participei do evento da Alura, Imersão _dev, que foi focado em HTML, CSS e, principalmente, Javascript (vanilla).  
