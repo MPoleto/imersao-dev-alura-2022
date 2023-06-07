@@ -25,7 +25,7 @@ O certificard foi o projeto final pelo qual é possível acessar os demais proje
 - Neste projeto os instrutores mostraram o Figma, conceitos de HTML/CSS e como alternar entre os modos light e dark com o Javascript.
 - Além disso, mostraram como fazer o deploy no GitHub.
 
-![Resultado do projeto certificard](./src/assets/img/certificard-pagina.gif)
+![Resultado do projeto certificard](./src/assets/img/certificard-pagina.gif#vitrinedev)
 
 -----------
 A Pen created on CodePen.io. Original URL: [https://codepen.io/mpoleto/pen/PoepzBQ](https://codepen.io/mpoleto/pen/PoepzBQ).
